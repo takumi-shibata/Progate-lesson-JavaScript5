@@ -1,4 +1,4 @@
-// 相対パス(ひとつ上の階層に戻る)
+// 相対パス(../ひとつ上の階層に戻る)
 import Dog from "../class/dog";
 const dog1 = new Dog("レオ", 4, "チワワ");
 const dog2 = new Dog("ベン", 2, "プードル");
