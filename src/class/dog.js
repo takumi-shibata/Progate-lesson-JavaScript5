@@ -3,6 +3,11 @@
 // 使用するファイルの先頭で「import クラス名 from "./ファイル名";」と記述する。
 import Animal from "./animal.js";
 
+// chalkパッケージをインポートしてください
+// パッケージ（作成された便利なプログラム(今回はchalk))の導入にもimportを使う
+// 「import 定数名 from "プログラム名"；」
+import chalk from "chalk";
+
 class Dog extends Animal {
   constructor(name, age, breed) {
     super(name, age);
@@ -11,8 +16,12 @@ class Dog extends Animal {
   
   info() {
     this.greet();
-    console.log(`名前は${this.name}です`);
-    console.log(`犬種は${this.breed}です`);
+    
+    // console.logの中身をchalkを使って書き換えてください
+    console.log(chalk.yellow(`名前は${this.name}です`));
+    
+    // console.logの中身をchalkを使って書き換えてください
+    console.log(chalk.bgCyan(`犬種は${this.breed}です`));
     
     console.log(`${this.age}歳です`);
     const humanAge = this.getHumanAge();
