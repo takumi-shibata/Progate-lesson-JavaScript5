@@ -1,3 +1,8 @@
+// Animalクラスをインポートしてください
+// 他のファイルで定義されているクラスを使用するにはインポートする必要がある。
+// 使用するファイルの先頭で「import クラス名 from "./ファイル名";」と記述する。
+import Animal from "./animal.js";
+
 class Dog extends Animal {
   constructor(name, age, breed) {
     super(name, age);
@@ -18,3 +23,6 @@ class Dog extends Animal {
     return this.age * 7;
   }
 }
+
+// Dogクラスをエクスポートしてください
+export default Dog;

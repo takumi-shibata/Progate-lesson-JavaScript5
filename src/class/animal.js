@@ -14,3 +14,7 @@ class Animal {
     console.log(`${this.age}歳です`);
   }
 }
+
+// 「export default クラス名;」とすることで、他のファイルへ渡すことができる。(デフォルトエクスポートは1ファイル1つの値のみ)
+// Animalクラスをエクスポートしてください
+export default Animal;
