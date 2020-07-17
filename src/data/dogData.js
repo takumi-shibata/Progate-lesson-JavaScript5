@@ -21,5 +21,5 @@ const age = readlineSync.questionInt("年齢を入力してください: ");
 const breed = readlineSync.question("犬種を入力してください: ");
 
 // 定数dog1, dog2をエクスポートしてください(文字列や数値や関数など、どんな値でもエクスポートが可能!)
-// 複数の値をエクスポートする場合は、「default」を書かずに、値を{}で囲んでエクスポートする。
+// 複数の値をエクスポートする場合は、「default」を書かずに、値を{}で囲んでエクスポートする。 ※クラス名以外もexportできる
 export {dog1,dog2};
